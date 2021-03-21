@@ -5,4 +5,4 @@ our local repo.
 
 We are going to create branches using the terminal.
 
-# Conflict from RStudio
+# Conflict solved from RStudio
