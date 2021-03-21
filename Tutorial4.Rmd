@@ -36,4 +36,19 @@ dat[1:5,] %>%
 
 This is to reference Table \@ref(tab:Tabref).
 
+```{r}
+library(COVID19)
+```
+
+# Exploring the expansion of COVID19
+
+```{r COVIDcases, cache=TRUE}
+COVID_AU <- world("country") %>%
+  dplyr::filter(country == "Australia") %>%
+  droplevels()
+p1 = ggplot(COVID_AU, aes(x = date, y = confirmed)) +
+  geom_line()
+p1
+```
+This is to reference the COVID19 figure \@ref(fig:COVIDcases). 
 
